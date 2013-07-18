@@ -1,4 +1,4 @@
 miniGTC
 =======
 
-GTC Framwork
+GTC Framework
