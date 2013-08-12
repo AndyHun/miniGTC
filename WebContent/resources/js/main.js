@@ -1,7 +1,7 @@
 require.config({
 	baseUrl : 'resources/js',
 	paths : {
-		jquery : 'lib/jquery-1.9.1',
+		jquery : 'lib/jquery',
 		underscore : 'lib/underscore',
 		backbone : 'lib/backbone',
 		jqCarousel : 'plugins/cloud-carousel.1.0.5',

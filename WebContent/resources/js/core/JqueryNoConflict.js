@@ -1,5 +1,5 @@
 define([ 'jquery' ], function($) {
-	return //$.noConflict(true);
+	return $;//$.noConflict(false);
 	//To open the jquery(which is take as requirejs modules) global variable
 	//return this;
 });
