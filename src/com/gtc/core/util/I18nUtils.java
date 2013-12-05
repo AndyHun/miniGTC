@@ -26,7 +26,7 @@ public class I18nUtils {
 	 */
 	private static Locale LOCALE_DEFAULT = Locale.CHINA;
 	
-	@Value("#{corePojo[com.gtc.LANGUAGE_SEPARATOR]?-}")
+	@Value("#{corePojo[com.gtc.LANGUAGE_SEPARATOR]}?-")
 	private static final String LOCAL_SEPARATOR = null;
 	
 	public static Locale getLocale(String locale) {

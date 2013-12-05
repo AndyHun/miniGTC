@@ -21,7 +21,7 @@ import com.sun.org.apache.xml.internal.security.utils.I18n;
  */
 public abstract class AbstractMsg implements Message {
 	
-	@Value("#{corePojo[com.gtc.core.msg.MINI_BODY_SIZE] ? : 20}")
+	@Value("#{corePojo[com.gtc.core.msg.MINI_BODY_SIZE] }? : 20")
 	private int MINI_BODY_SIZE;
 	
 	private List<MetaMsg> msgList = new ArrayList<MetaMsg>();
