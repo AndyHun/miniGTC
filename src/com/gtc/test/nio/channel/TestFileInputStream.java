@@ -44,6 +44,12 @@ public class TestFileInputStream {
             }
             buffer.clear();
         }
+        if(inputChannel.isOpen()){
+            inputChannel.close();
+        }
+        if(outputChannel.isOpen()){
+            outputChannel.close();
+        }
     }
 
 

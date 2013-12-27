@@ -17,13 +17,20 @@ import java.util.regex.Pattern;
  */
 public class Test {
 	public static void main(String args[]){
-		Pattern pattern = Pattern.compile("([0-9]{1,4})-([0-9]{1,4})-([0-9]{1,4})-([0-9]{1,4})-?([0-9]){0,4}");
+		/*Pattern pattern = Pattern.compile("([0-9]{1,4})-([0-9]{1,4})-([0-9]{1,4})-([0-9]{1,4})-?([0-9]){0,4}");
 		String content = "0-1-1-4-5";
 		Matcher matcher =pattern.matcher(content);
 		if(matcher.find()){
 			System.out.println(matcher.group(5));
 		}else{
 			System.out.println("no");
-		}
+		}*/
+        Pattern pattern = Pattern.compile("\\d+:\\d+");
+        String content = "10:20,30:23,45,40:40,";
+        Matcher matcher =pattern.matcher(content);
+        if(matcher.find()){
+            System.out.println("YES");
+            System.out.println(matcher.group(0));
+        }
 	}
 }
